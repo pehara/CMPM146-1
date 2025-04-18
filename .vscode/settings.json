@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CMPM146Assignment1Framework-main.sln"
+    "dotnet.defaultSolution": "CMPM146-1.sln"
 }
