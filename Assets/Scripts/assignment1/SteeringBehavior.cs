@@ -93,8 +93,13 @@ public class SteeringBehavior : MonoBehaviour
             // Debug.Log("reached point");
             if (path != null && path.Count > 0) {
                 path.RemoveAt(0);
+                if (path.Count == 0) {
+                    this.target = target;
+                    EventBus.SetTarget(transform.position);
+                }
             } else {
-                SetTarget(transform.position);
+                this.target = target;
+                EventBus.SetTarget(transform.position);
             }
         }
     }
